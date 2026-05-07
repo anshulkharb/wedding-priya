@@ -261,7 +261,10 @@ h1 {
   justify-content: center;
   gap: 8px;
   color: var(--secondary);
-  background: var(--surface-low);
+  background:
+    radial-gradient(rgba(115, 92, 0, 0.12) 1px, transparent 1px),
+    var(--peach);
+  background-size: 12px 12px;
   font-size: 0.75rem;
   font-weight: 500;
 }
