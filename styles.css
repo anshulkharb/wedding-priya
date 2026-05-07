@@ -276,8 +276,8 @@ h1 {
 .nav-ganesha {
   position: absolute;
   left: clamp(14px, 4vw, 22px);
-  width: 44px;
-  height: 52px;
+  width: 38px;
+  height: 38px;
   display: block;
   object-fit: contain;
 }
