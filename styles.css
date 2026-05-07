@@ -587,16 +587,12 @@ h1 {
 
 @media (min-width: 720px) {
   body {
-    padding-bottom: 40px;
+    padding-bottom: 96px;
   }
 
   .bottom-nav {
     width: min(100%, 720px);
     margin-inline: auto;
-  }
-
-  .bottom-nav {
-    display: none;
   }
 
   .invitation-shell {
