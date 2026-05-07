@@ -7,194 +7,280 @@
       name="description"
       content="Wedding event information for Priya and Anshul, June 20-21, 2026 in Rohtak."
     />
-    <meta name="theme-color" content="#561427" />
-    <title>Priya Weds Anshul</title>
+    <meta name="theme-color" content="#ffe0d6" />
+    <title>Priya &amp; Anshul</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Serif:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="site-hero" id="top">
-      <nav class="topbar" aria-label="Wedding site navigation">
-        <a class="brand" href="#top" aria-label="Priya and Anshul home">
-          P<span>&amp;</span>A
-        </a>
-        <div class="nav-links">
-          <a href="#events">Events</a>
-          <a href="#rsvp">Contacts</a>
-        </div>
-      </nav>
-
-      <div class="hero-layout">
-        <section class="hero-copy" aria-labelledby="main-title">
-          <p class="eyebrow">Wedding Information</p>
-          <h1 id="main-title">Priya weds Anshul</h1>
-          <p class="hero-text">
-            A simple guide to the celebration schedule, venues, map links, and
-            family contact details in Rohtak.
-          </p>
-
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="#events">See Schedule</a>
-            <a class="button secondary" href="#rsvp">Call Contacts</a>
-          </div>
-        </section>
-
-        <aside class="hero-card" aria-label="Wedding dates and location">
-          <img
-            class="hero-floral"
-            src="./assets/floral-arch.svg"
-            alt=""
-            aria-hidden="true"
-          />
-          <p class="card-label">Rohtak, Haryana</p>
-          <div class="date-stack">
-            <time datetime="2026-06-20">
-              <span>Sat</span>
-              20 June
-            </time>
-            <time datetime="2026-06-21">
-              <span>Sun</span>
-              21 June
-            </time>
-          </div>
-          <p class="countdown" id="countdown" aria-live="polite"></p>
-        </aside>
-      </div>
+    <header class="top-appbar">
+      <a class="icon-button" href="#events" aria-label="Jump to events">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5 7h14M5 12h14M5 17h14" />
+        </svg>
+      </a>
+      <a class="top-title" href="#top">Priya &amp; Anshul</a>
+      <a class="icon-button" href="#rsvp" aria-label="Jump to contacts">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.6-7 10-7 10z" />
+        </svg>
+      </a>
     </header>
 
-    <main>
-      <section class="section schedule-section" id="events" aria-labelledby="events-title">
-        <div class="section-inner">
-          <div class="section-heading">
-            <p class="section-label">Events &amp; Locations</p>
-            <h2 id="events-title">Wedding Schedule</h2>
+    <main class="invitation-shell" id="top">
+      <div class="decor-frame" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <section class="hero-card" aria-labelledby="main-title">
+        <figure class="hero-image">
+          <img
+            src="./assets/wedding-hero.jpg"
+            alt="Watercolor illustration of an Indian wedding couple under a floral mandap"
+          />
+        </figure>
+
+        <div class="hero-copy">
+          <h1 id="main-title">Priya &amp; Anshul</h1>
+          <p class="date-line">20-21 June 26</p>
+          <div class="divider" aria-hidden="true">
+            <span></span>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.6-7 10-7 10z" />
+            </svg>
+            <span></span>
           </div>
-
-          <div class="schedule-grid">
-            <article class="event-card">
-              <div class="date-badge">
-                <span>Sat</span>
-                <strong>20</strong>
-                <span>Jun</span>
-              </div>
-
-              <div class="event-content">
-                <div class="event-head">
-                  <p>Saturday, 20th June, 2026</p>
-                  <h3>Garima Garden</h3>
-                </div>
-
-                <dl class="timeline">
-                  <div>
-                    <dt>Lagan Tikka</dt>
-                    <dd>6:15 PM</dd>
-                  </div>
-                  <div>
-                    <dt>Dinner &amp; Sangeet</dt>
-                    <dd>7:30 PM</dd>
-                  </div>
-                </dl>
-
-                <div class="venue-row">
-                  <address>
-                    Near Vita Chowk,<br />
-                    Gohana Road, Rohtak
-                  </address>
-                  <a
-                    class="map-link"
-                    href="https://www.google.com/maps/search/?api=1&query=Garima%20Garden%20Near%20Vita%20Chowk%20Gohana%20Road%20Rohtak"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Open Map
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="event-card featured">
-              <div class="date-badge">
-                <span>Sun</span>
-                <strong>21</strong>
-                <span>Jun</span>
-              </div>
-
-              <div class="event-content">
-                <div class="event-head">
-                  <p>Sunday, 21st June, 2026</p>
-                  <h3>Singhasan Banquet &amp; Lawn</h3>
-                </div>
-
-                <dl class="timeline">
-                  <div>
-                    <dt>Sehra Bandi</dt>
-                    <dd>6:15 PM</dd>
-                  </div>
-                  <div>
-                    <dt>Departure of Barat</dt>
-                    <dd>7:15 PM</dd>
-                  </div>
-                </dl>
-
-                <div class="venue-row">
-                  <address>
-                    Mastnath Nagar,<br />
-                    Rohtak
-                  </address>
-                  <a
-                    class="map-link"
-                    href="https://www.google.com/maps/search/?api=1&query=Singhasan%20Banquet%20%26%20Lawn%20Mastnath%20Nagar%20Rohtak"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Open Map
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
+          <p class="intro">
+            Joyfully sharing the celebration details for their wedding in
+            Rohtak.
+          </p>
         </div>
       </section>
 
-      <section class="section contacts-section" id="rsvp" aria-labelledby="contacts-title">
-        <div class="section-inner contacts-layout">
-          <div class="section-heading">
-            <p class="section-label">Contacts</p>
-            <h2 id="contacts-title">People Involved</h2>
-          </div>
+      <section class="content-section" id="events" aria-labelledby="events-title">
+        <h2 id="events-title">The Celebrations</h2>
 
-          <div class="contact-grid">
-            <article class="contact-card">
-              <p class="card-label">Groom's Family</p>
-              <h3>Smt. Yashwanti &amp; Sh. Ram Niwas Kharb</h3>
-              <p>Parents of Anshul</p>
-            </article>
+        <div class="day-divider">
+          <span></span>
+          <h3>Saturday, June 20th, 2026</h3>
+          <span></span>
+        </div>
 
-            <article class="contact-card">
-              <p class="card-label">Bride's Family</p>
-              <h3>Smt. Saroj Bala &amp; Sh. Naresh Nandal</h3>
-              <p>Parents of Priya, R/o Rohtak</p>
-            </article>
-          </div>
+        <article class="event-card">
+          <svg class="event-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 20c6-2 10-6 12-12" />
+            <path d="M7 13c-2-2-2-5 0-7 2 2 2 5 0 7zM14 10c-2-2-2-5 0-7 2 2 2 5 0 7zM18 7l2-3M17 12l4-1M13 16l3 3" />
+          </svg>
+          <h4>Lagan Tikka</h4>
+          <div class="card-rule"></div>
+          <p class="detail">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="8" />
+              <path d="M12 7v5l3 2" />
+            </svg>
+            6:15 PM Onwards
+          </p>
+          <p class="detail">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 21s7-6.4 7-12A7 7 0 0 0 5 9c0 5.6 7 12 7 12z" />
+              <circle cx="12" cy="9" r="2.4" />
+            </svg>
+            <span>Garima Garden, Near Vita Chowk<br />Gohana Road, Rohtak</span>
+          </p>
+          <a
+            class="map-button"
+            href="https://www.google.com/maps/search/?api=1&query=Garima%20Garden%20Near%20Vita%20Chowk%20Gohana%20Road%20Rohtak"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 6l5-2 6 2 5-2v14l-5 2-6-2-5 2V6zM9 4v14M15 6v14" />
+            </svg>
+            View on Map
+          </a>
+          <svg class="card-flourish" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 19c-3-2-5-5-5-9 3 1 5 3 5 6 0-3 2-5 5-6 0 4-2 7-5 9z" />
+          </svg>
+        </article>
 
-          <div class="phone-panel" aria-label="Contact numbers">
-            <p class="card-label">Call</p>
-            <h3>Contact Numbers</h3>
-            <div class="phone-list">
-              <a href="tel:+919034343903">90343-43903</a>
-              <a href="tel:+919991035092">99910-35092</a>
-              <a href="tel:+919416852410">94168-52410</a>
-              <a href="tel:+919996117136">99961-17136</a>
-            </div>
-          </div>
+        <article class="event-card">
+          <svg class="event-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 3v8M11 3v8M9 11v10M16 3v18M19 3v18" />
+            <path d="M7 7h4" />
+          </svg>
+          <h4>Dinner &amp; Sangeet</h4>
+          <div class="card-rule"></div>
+          <p class="detail">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="8" />
+              <path d="M12 7v5l3 2" />
+            </svg>
+            7:30 PM Onwards
+          </p>
+          <p class="detail">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 21s7-6.4 7-12A7 7 0 0 0 5 9c0 5.6 7 12 7 12z" />
+              <circle cx="12" cy="9" r="2.4" />
+            </svg>
+            <span>Garima Garden, Near Vita Chowk<br />Gohana Road, Rohtak</span>
+          </p>
+          <a
+            class="map-button"
+            href="https://www.google.com/maps/search/?api=1&query=Garima%20Garden%20Near%20Vita%20Chowk%20Gohana%20Road%20Rohtak"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 6l5-2 6 2 5-2v14l-5 2-6-2-5 2V6zM9 4v14M15 6v14" />
+            </svg>
+            View on Map
+          </a>
+          <svg class="card-flourish" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 19c-3-2-5-5-5-9 3 1 5 3 5 6 0-3 2-5 5-6 0 4-2 7-5 9z" />
+          </svg>
+        </article>
+
+        <div class="day-divider">
+          <span></span>
+          <h3>Sunday, June 21st, 2026</h3>
+          <span></span>
+        </div>
+
+        <article class="event-card">
+          <svg class="event-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="8" />
+            <path d="M8.5 12c1-2 6-2 7 0M9 15c1.8 1.4 4.2 1.4 6 0M9 8l-2-3M15 8l2-3" />
+          </svg>
+          <h4>Sehra Bandi</h4>
+          <div class="card-rule"></div>
+          <p class="detail">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="8" />
+              <path d="M12 7v5l3 2" />
+            </svg>
+            6:15 PM Onwards
+          </p>
+          <p class="detail">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 21s7-6.4 7-12A7 7 0 0 0 5 9c0 5.6 7 12 7 12z" />
+              <circle cx="12" cy="9" r="2.4" />
+            </svg>
+            <span>Singhasan Banquet &amp; Lawn<br />Mastnath Nagar, Rohtak</span>
+          </p>
+          <a
+            class="map-button"
+            href="https://www.google.com/maps/search/?api=1&query=Singhasan%20Banquet%20%26%20Lawn%20Mastnath%20Nagar%20Rohtak"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 6l5-2 6 2 5-2v14l-5 2-6-2-5 2V6zM9 4v14M15 6v14" />
+            </svg>
+            View on Map
+          </a>
+          <svg class="card-flourish" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 19c-3-2-5-5-5-9 3 1 5 3 5 6 0-3 2-5 5-6 0 4-2 7-5 9z" />
+          </svg>
+        </article>
+
+        <article class="event-card">
+          <svg class="event-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 11h16M6 11l6-6 6 6M7 11v8M11 11v8M15 11v8M19 19H5" />
+          </svg>
+          <h4>Departure of Barat</h4>
+          <div class="card-rule"></div>
+          <p class="detail">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="8" />
+              <path d="M12 7v5l3 2" />
+            </svg>
+            7:15 PM Onwards
+          </p>
+          <p class="detail">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 21s7-6.4 7-12A7 7 0 0 0 5 9c0 5.6 7 12 7 12z" />
+              <circle cx="12" cy="9" r="2.4" />
+            </svg>
+            <span>Singhasan Banquet &amp; Lawn<br />Mastnath Nagar, Rohtak</span>
+          </p>
+          <a
+            class="map-button"
+            href="https://www.google.com/maps/search/?api=1&query=Singhasan%20Banquet%20%26%20Lawn%20Mastnath%20Nagar%20Rohtak"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 6l5-2 6 2 5-2v14l-5 2-6-2-5 2V6zM9 4v14M15 6v14" />
+            </svg>
+            View on Map
+          </a>
+          <svg class="card-flourish" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 19c-3-2-5-5-5-9 3 1 5 3 5 6 0-3 2-5 5-6 0 4-2 7-5 9z" />
+          </svg>
+        </article>
+      </section>
+
+      <section class="content-section blessings" aria-labelledby="blessings-title">
+        <h2 id="blessings-title">With Blessings From</h2>
+        <p>Smt. Yashwanti &amp; Sh. Ram Niwas Kharb</p>
+        <p>Smt. Saroj Bala &amp; Sh. Naresh Nandal</p>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 19c-3-2-5-5-5-9 3 1 5 3 5 6 0-3 2-5 5-6 0 4-2 7-5 9z" />
+        </svg>
+      </section>
+
+      <section class="content-section contacts" id="rsvp" aria-labelledby="contacts-title">
+        <h2 id="contacts-title">Contact Information</h2>
+        <p class="contacts-note">For RSVP &amp; queries</p>
+        <div class="contact-box">
+          <a href="tel:+919034343903">
+            <span>Family</span>
+            <strong>+91 90343 43903</strong>
+          </a>
+          <a href="tel:+919991035092">
+            <span>Family</span>
+            <strong>+91 99910 35092</strong>
+          </a>
+          <a href="tel:+919416852410">
+            <span>Family</span>
+            <strong>+91 94168 52410</strong>
+          </a>
+          <a href="tel:+919996117136">
+            <span>Family</span>
+            <strong>+91 99961 17136</strong>
+          </a>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <p>Priya &amp; Anshul | 20-21 June 2026 | Rohtak</p>
-      <a href="#top">Back to top</a>
-    </footer>
-
-    <script src="./script.js"></script>
+    <nav class="bottom-nav" aria-label="Mobile navigation">
+      <a class="active" href="#top">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 11l8-7 8 7v8a1 1 0 0 1-1 1h-5v-6h-4v6H5a1 1 0 0 1-1-1v-8z" />
+        </svg>
+        Home
+      </a>
+      <a href="#events">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5 20c6-2 10-6 12-12M7 13c-2-2-2-5 0-7 2 2 2 5 0 7zM15 10c-2-2-2-5 0-7 2 2 2 5 0 7z" />
+        </svg>
+        Events
+      </a>
+      <a href="#rsvp">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7 8a5 5 0 0 1 10 0c0 4-5 8-5 8s-5-4-5-8z" />
+          <path d="M5 21c1.8-2 4.2-3 7-3s5.2 1 7 3" />
+        </svg>
+        Contacts
+      </a>
+    </nav>
   </body>
 </html>
