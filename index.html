@@ -7,134 +7,148 @@
       name="description"
       content="Wedding event information for Priya and Anshul, June 20-21, 2026 in Rohtak."
     />
-    <meta name="theme-color" content="#7b1f35" />
+    <meta name="theme-color" content="#561427" />
     <title>Priya Weds Anshul</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="hero compact-hero" id="top">
+    <header class="site-hero" id="top">
       <nav class="topbar" aria-label="Wedding site navigation">
-        <a class="brand" href="#top">P &amp; A</a>
+        <a class="brand" href="#top" aria-label="Priya and Anshul home">
+          P<span>&amp;</span>A
+        </a>
         <div class="nav-links">
           <a href="#events">Events</a>
           <a href="#rsvp">Contacts</a>
         </div>
       </nav>
 
-      <div class="hero-grid">
-        <section class="invite-panel" aria-labelledby="main-title">
+      <div class="hero-layout">
+        <section class="hero-copy" aria-labelledby="main-title">
           <p class="eyebrow">Wedding Information</p>
           <h1 id="main-title">Priya weds Anshul</h1>
-          <p class="blessing">
-            Events, venues, locations, and contact details for the wedding
-            celebrations in Rohtak.
+          <p class="hero-text">
+            A simple guide to the celebration schedule, venues, map links, and
+            family contact details in Rohtak.
           </p>
 
-          <div class="names" aria-label="Couple names">
-            <span>Anshul</span>
-            <small>with</small>
-            <span>Priya</span>
-          </div>
-
           <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="#events">View Events</a>
-            <a class="button secondary" href="#rsvp">Contacts</a>
+            <a class="button primary" href="#events">See Schedule</a>
+            <a class="button secondary" href="#rsvp">Call Contacts</a>
           </div>
         </section>
 
-        <aside class="date-panel" aria-label="Wedding dates">
+        <aside class="hero-card" aria-label="Wedding dates and location">
           <img
-            class="arch"
+            class="hero-floral"
             src="./assets/floral-arch.svg"
             alt=""
             aria-hidden="true"
           />
-          <p class="date-kicker">Dates</p>
-          <time datetime="2026-06-20">20 June 2026</time>
-          <span class="date-divider"></span>
-          <time datetime="2026-06-21">21 June 2026</time>
-          <p class="place">Rohtak, Haryana</p>
+          <p class="card-label">Rohtak, Haryana</p>
+          <div class="date-stack">
+            <time datetime="2026-06-20">
+              <span>Sat</span>
+              20 June
+            </time>
+            <time datetime="2026-06-21">
+              <span>Sun</span>
+              21 June
+            </time>
+          </div>
           <p class="countdown" id="countdown" aria-live="polite"></p>
         </aside>
       </div>
     </header>
 
     <main>
-      <section class="section" id="events" aria-labelledby="events-title">
+      <section class="section schedule-section" id="events" aria-labelledby="events-title">
         <div class="section-inner">
           <div class="section-heading">
             <p class="section-label">Events &amp; Locations</p>
             <h2 id="events-title">Wedding Schedule</h2>
           </div>
 
-          <div class="event-grid">
-            <article class="event-day">
-              <div class="day-head">
-                <p>Saturday</p>
-                <h3>20th June, 2026</h3>
+          <div class="schedule-grid">
+            <article class="event-card">
+              <div class="date-badge">
+                <span>Sat</span>
+                <strong>20</strong>
+                <span>Jun</span>
               </div>
 
-              <dl class="timeline">
-                <div>
-                  <dt>Lagan Tikka</dt>
-                  <dd>6:15 PM</dd>
+              <div class="event-content">
+                <div class="event-head">
+                  <p>Saturday, 20th June, 2026</p>
+                  <h3>Garima Garden</h3>
                 </div>
-                <div>
-                  <dt>Dinner &amp; Sangeet</dt>
-                  <dd>7:30 PM</dd>
-                </div>
-              </dl>
 
-              <div class="event-location">
-                <p class="venue-date">Venue</p>
-                <h4>Garima Garden</h4>
-                <address>
-                  Near Vita Chowk,<br />
-                  Gohana Road, Rohtak
-                </address>
-                <a
-                  class="venue-link"
-                  href="https://www.google.com/maps/search/?api=1&query=Garima%20Garden%20Near%20Vita%20Chowk%20Gohana%20Road%20Rohtak"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Open Map
-                </a>
+                <dl class="timeline">
+                  <div>
+                    <dt>Lagan Tikka</dt>
+                    <dd>6:15 PM</dd>
+                  </div>
+                  <div>
+                    <dt>Dinner &amp; Sangeet</dt>
+                    <dd>7:30 PM</dd>
+                  </div>
+                </dl>
+
+                <div class="venue-row">
+                  <address>
+                    Near Vita Chowk,<br />
+                    Gohana Road, Rohtak
+                  </address>
+                  <a
+                    class="map-link"
+                    href="https://www.google.com/maps/search/?api=1&query=Garima%20Garden%20Near%20Vita%20Chowk%20Gohana%20Road%20Rohtak"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Open Map
+                  </a>
+                </div>
               </div>
             </article>
 
-            <article class="event-day">
-              <div class="day-head">
-                <p>Sunday</p>
-                <h3>21st June, 2026</h3>
+            <article class="event-card featured">
+              <div class="date-badge">
+                <span>Sun</span>
+                <strong>21</strong>
+                <span>Jun</span>
               </div>
 
-              <dl class="timeline">
-                <div>
-                  <dt>Sehra Bandi</dt>
-                  <dd>6:15 PM</dd>
+              <div class="event-content">
+                <div class="event-head">
+                  <p>Sunday, 21st June, 2026</p>
+                  <h3>Singhasan Banquet &amp; Lawn</h3>
                 </div>
-                <div>
-                  <dt>Departure of Barat</dt>
-                  <dd>7:15 PM</dd>
-                </div>
-              </dl>
 
-              <div class="event-location">
-                <p class="venue-date">Venue</p>
-                <h4>Singhasan Banquet &amp; Lawn</h4>
-                <address>
-                  Mastnath Nagar,<br />
-                  Rohtak
-                </address>
-                <a
-                  class="venue-link"
-                  href="https://www.google.com/maps/search/?api=1&query=Singhasan%20Banquet%20%26%20Lawn%20Mastnath%20Nagar%20Rohtak"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Open Map
-                </a>
+                <dl class="timeline">
+                  <div>
+                    <dt>Sehra Bandi</dt>
+                    <dd>6:15 PM</dd>
+                  </div>
+                  <div>
+                    <dt>Departure of Barat</dt>
+                    <dd>7:15 PM</dd>
+                  </div>
+                </dl>
+
+                <div class="venue-row">
+                  <address>
+                    Mastnath Nagar,<br />
+                    Rohtak
+                  </address>
+                  <a
+                    class="map-link"
+                    href="https://www.google.com/maps/search/?api=1&query=Singhasan%20Banquet%20%26%20Lawn%20Mastnath%20Nagar%20Rohtak"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Open Map
+                  </a>
+                </div>
               </div>
             </article>
           </div>
@@ -142,7 +156,7 @@
       </section>
 
       <section class="section contacts-section" id="rsvp" aria-labelledby="contacts-title">
-        <div class="section-inner">
+        <div class="section-inner contacts-layout">
           <div class="section-heading">
             <p class="section-label">Contacts</p>
             <h2 id="contacts-title">People Involved</h2>
@@ -150,19 +164,20 @@
 
           <div class="contact-grid">
             <article class="contact-card">
-              <p class="venue-date">Groom's Family</p>
+              <p class="card-label">Groom's Family</p>
               <h3>Smt. Yashwanti &amp; Sh. Ram Niwas Kharb</h3>
               <p>Parents of Anshul</p>
             </article>
 
             <article class="contact-card">
-              <p class="venue-date">Bride's Family</p>
+              <p class="card-label">Bride's Family</p>
               <h3>Smt. Saroj Bala &amp; Sh. Naresh Nandal</h3>
               <p>Parents of Priya, R/o Rohtak</p>
             </article>
           </div>
 
           <div class="phone-panel" aria-label="Contact numbers">
+            <p class="card-label">Call</p>
             <h3>Contact Numbers</h3>
             <div class="phone-list">
               <a href="tel:+919034343903">90343-43903</a>
