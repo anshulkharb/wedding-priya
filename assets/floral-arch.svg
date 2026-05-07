@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 430" role="img" aria-label="Decorative wedding floral arch">
+  <defs>
+    <linearGradient id="stem" x1="0" x2="1">
+      <stop offset="0" stop-color="#315b48"/>
+      <stop offset="1" stop-color="#6f7a48"/>
+    </linearGradient>
+    <linearGradient id="petal" x1="0" x2="1">
+      <stop offset="0" stop-color="#b9475f"/>
+      <stop offset="1" stop-color="#f0b2aa"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#4c1021" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <path d="M84 402V214C84 113 162 34 260 34s176 79 176 180v188" fill="none" stroke="#c9943a" stroke-width="8" stroke-linecap="round"/>
+  <path d="M118 402V218c0-82 62-148 142-148s142 66 142 148v184" fill="none" stroke="#7b1f35" stroke-width="2" stroke-linecap="round" opacity=".42"/>
+  <g fill="none" stroke="url(#stem)" stroke-width="5" stroke-linecap="round">
+    <path d="M88 238c-34-16-55-43-64-82"/>
+    <path d="M432 238c34-16 55-43 64-82"/>
+    <path d="M128 126C96 94 73 58 64 22"/>
+    <path d="M392 126c32-32 55-68 64-104"/>
+  </g>
+  <g fill="#315b48" opacity=".9">
+    <ellipse cx="45" cy="158" rx="15" ry="30" transform="rotate(-44 45 158)"/>
+    <ellipse cx="72" cy="112" rx="13" ry="27" transform="rotate(-14 72 112)"/>
+    <ellipse cx="104" cy="80" rx="14" ry="28" transform="rotate(-48 104 80)"/>
+    <ellipse cx="475" cy="158" rx="15" ry="30" transform="rotate(44 475 158)"/>
+    <ellipse cx="448" cy="112" rx="13" ry="27" transform="rotate(14 448 112)"/>
+    <ellipse cx="416" cy="80" rx="14" ry="28" transform="rotate(48 416 80)"/>
+  </g>
+  <g filter="url(#soft)">
+    <g transform="translate(62 206)">
+      <circle r="30" fill="url(#petal)"/>
+      <circle cx="-19" cy="-5" r="17" fill="#f5c8bb"/>
+      <circle cx="16" cy="-14" r="18" fill="#d96d75"/>
+      <circle cx="8" cy="17" r="17" fill="#9d2f4a"/>
+      <circle r="8" fill="#c9943a"/>
+    </g>
+    <g transform="translate(456 206)">
+      <circle r="30" fill="url(#petal)"/>
+      <circle cx="19" cy="-5" r="17" fill="#f5c8bb"/>
+      <circle cx="-16" cy="-14" r="18" fill="#d96d75"/>
+      <circle cx="-8" cy="17" r="17" fill="#9d2f4a"/>
+      <circle r="8" fill="#c9943a"/>
+    </g>
+    <g transform="translate(126 86) scale(.82)">
+      <circle r="30" fill="url(#petal)"/>
+      <circle cx="-19" cy="-5" r="17" fill="#f5c8bb"/>
+      <circle cx="16" cy="-14" r="18" fill="#d96d75"/>
+      <circle cx="8" cy="17" r="17" fill="#9d2f4a"/>
+      <circle r="8" fill="#c9943a"/>
+    </g>
+    <g transform="translate(394 86) scale(.82)">
+      <circle r="30" fill="url(#petal)"/>
+      <circle cx="19" cy="-5" r="17" fill="#f5c8bb"/>
+      <circle cx="-16" cy="-14" r="18" fill="#d96d75"/>
+      <circle cx="-8" cy="17" r="17" fill="#9d2f4a"/>
+      <circle r="8" fill="#c9943a"/>
+    </g>
+    <g transform="translate(260 44) scale(.66)">
+      <circle r="30" fill="url(#petal)"/>
+      <circle cx="-19" cy="-5" r="17" fill="#f5c8bb"/>
+      <circle cx="16" cy="-14" r="18" fill="#d96d75"/>
+      <circle cx="8" cy="17" r="17" fill="#9d2f4a"/>
+      <circle r="8" fill="#c9943a"/>
+    </g>
+  </g>
+  <g fill="#c9943a" opacity=".78">
+    <circle cx="34" cy="196" r="5"/>
+    <circle cx="93" cy="130" r="5"/>
+    <circle cx="486" cy="196" r="5"/>
+    <circle cx="427" cy="130" r="5"/>
+    <circle cx="260" cy="82" r="4"/>
+  </g>
+</svg>
