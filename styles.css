@@ -99,54 +99,10 @@ svg {
 }
 
 .invitation-shell {
-  width: min(100%, 430px);
+  width: min(100%, 720px);
   margin: 0 auto;
-  padding: 16px 16px 28px;
+  padding: clamp(16px, 4vw, 28px) clamp(16px, 4vw, 32px) 28px;
   position: relative;
-}
-
-.decor-frame {
-  position: absolute;
-  inset: 8px;
-  border: 2px solid rgba(115, 92, 0, 0.18);
-  border-radius: 10px;
-  pointer-events: none;
-}
-
-.decor-frame::before {
-  content: "";
-  position: absolute;
-  inset: 6px;
-  border: 1px dashed rgba(115, 92, 0, 0.32);
-  border-radius: 8px;
-}
-
-.decor-frame span {
-  width: 8px;
-  height: 8px;
-  border: 1px solid rgba(115, 92, 0, 0.46);
-  border-radius: 50%;
-  position: absolute;
-}
-
-.decor-frame span:nth-child(1) {
-  top: 8px;
-  left: 8px;
-}
-
-.decor-frame span:nth-child(2) {
-  top: 8px;
-  right: 8px;
-}
-
-.decor-frame span:nth-child(3) {
-  bottom: 8px;
-  left: 8px;
-}
-
-.decor-frame span:nth-child(4) {
-  right: 8px;
-  bottom: 8px;
 }
 
 .hero-card,
@@ -163,7 +119,7 @@ svg {
 }
 
 .hero-image {
-  width: min(100%, 342px);
+  width: min(100%, 390px);
   aspect-ratio: 1;
   margin: 0 auto;
   border: 4px solid var(--surface);
@@ -205,7 +161,7 @@ h4 {
 }
 
 h1 {
-  font-size: clamp(2.55rem, 12vw, 3.1rem);
+  font-size: clamp(2.15rem, 9vw, 2.75rem);
   font-weight: 700;
   line-height: 1.05;
 }
@@ -214,8 +170,8 @@ h1 {
   margin: 0;
   color: var(--primary);
   font-family: "Noto Serif", Georgia, serif;
-  font-size: 1.04rem;
-  font-weight: 600;
+  font-size: clamp(1.28rem, 5vw, 1.7rem);
+  font-weight: 700;
 }
 
 .divider {
@@ -249,6 +205,8 @@ h1 {
 
 .content-section {
   margin-top: 48px;
+  width: min(100%, 560px);
+  margin-inline: auto;
   display: grid;
   gap: 18px;
   text-align: center;
@@ -462,7 +420,7 @@ h1 {
 
   .top-appbar,
   .bottom-nav {
-    width: 430px;
+    width: min(100%, 720px);
     margin-inline: auto;
   }
 
@@ -474,7 +432,6 @@ h1 {
     margin-top: 18px;
     margin-bottom: 18px;
     border-radius: 14px;
-    box-shadow: 0 18px 60px rgba(101, 0, 0, 0.18);
   }
 }
 
