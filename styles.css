@@ -159,6 +159,11 @@ h1 {
   -webkit-mask-image: url("./assets/icons/celebration.svg");
 }
 
+.icon-call {
+  mask-image: url("./assets/icons/call.svg");
+  -webkit-mask-image: url("./assets/icons/call.svg");
+}
+
 .icon-contacts {
   mask-image: url("./assets/icons/contacts.svg");
   -webkit-mask-image: url("./assets/icons/contacts.svg");
@@ -422,7 +427,7 @@ h1 {
   min-height: 50px;
   padding: 8px 18px;
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 12px;
   align-items: center;
   color: var(--muted);
@@ -434,14 +439,40 @@ h1 {
   border-top: 1px solid rgba(227, 190, 184, 0.86);
 }
 
-.contact-box span {
+.contact-label {
   color: var(--primary);
   font-weight: 500;
+}
+
+.contact-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  justify-self: end;
+  min-width: 0;
 }
 
 .contact-box strong {
   color: var(--muted);
   font-weight: 400;
+  white-space: nowrap;
+}
+
+.call-button {
+  width: 32px;
+  height: 32px;
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 auto;
+  border: 1px solid rgba(115, 92, 0, 0.48);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--secondary);
+}
+
+.call-button .icon {
+  width: 17px;
+  height: 17px;
 }
 
 .bottom-nav {
