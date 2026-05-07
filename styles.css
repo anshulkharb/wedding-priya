@@ -49,16 +49,6 @@ a {
   text-decoration: none;
 }
 
-svg {
-  width: 24px;
-  height: 24px;
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.7;
-}
-
 .invitation-shell {
   width: min(100%, 720px);
   margin: 0 auto;
@@ -150,10 +140,78 @@ h1 {
   background: rgba(115, 92, 0, 0.44);
 }
 
-.divider svg {
+.icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  flex: 0 0 auto;
+  background: currentColor;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+}
+
+.icon-celebration {
+  mask-image: url("./assets/icons/celebration.svg");
+  -webkit-mask-image: url("./assets/icons/celebration.svg");
+}
+
+.icon-contacts {
+  mask-image: url("./assets/icons/contacts.svg");
+  -webkit-mask-image: url("./assets/icons/contacts.svg");
+}
+
+.icon-face {
+  mask-image: url("./assets/icons/face.svg");
+  -webkit-mask-image: url("./assets/icons/face.svg");
+}
+
+.icon-favorite {
+  mask-image: url("./assets/icons/favorite.svg");
+  -webkit-mask-image: url("./assets/icons/favorite.svg");
+}
+
+.icon-festival {
+  mask-image: url("./assets/icons/festival.svg");
+  -webkit-mask-image: url("./assets/icons/festival.svg");
+}
+
+.icon-home {
+  mask-image: url("./assets/icons/home.svg");
+  -webkit-mask-image: url("./assets/icons/home.svg");
+}
+
+.icon-location {
+  mask-image: url("./assets/icons/location_on.svg");
+  -webkit-mask-image: url("./assets/icons/location_on.svg");
+}
+
+.icon-map {
+  mask-image: url("./assets/icons/map.svg");
+  -webkit-mask-image: url("./assets/icons/map.svg");
+}
+
+.icon-restaurant {
+  mask-image: url("./assets/icons/restaurant.svg");
+  -webkit-mask-image: url("./assets/icons/restaurant.svg");
+}
+
+.icon-schedule {
+  mask-image: url("./assets/icons/schedule.svg");
+  -webkit-mask-image: url("./assets/icons/schedule.svg");
+}
+
+.icon-spa {
+  mask-image: url("./assets/icons/spa.svg");
+  -webkit-mask-image: url("./assets/icons/spa.svg");
+}
+
+.divider .icon {
   width: 18px;
   height: 18px;
-  fill: none;
 }
 
 .intro {
@@ -210,14 +268,9 @@ h1 {
 }
 
 .event-icon {
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   color: rgba(115, 92, 0, 0.72);
-}
-
-.ceremony-icon {
-  width: 40px;
-  height: 40px;
 }
 
 .event-card h4 {
@@ -232,22 +285,31 @@ h1 {
 }
 
 .detail {
-  width: 100%;
+  width: fit-content;
+  max-width: 100%;
   margin: 0;
   display: grid;
-  grid-template-columns: 22px minmax(0, auto);
+  grid-template-columns: 22px minmax(0, 1fr);
   justify-content: center;
-  gap: 8px;
+  align-items: start;
+  gap: 10px;
   color: var(--muted);
   font-family: "Noto Serif", Georgia, serif;
   font-size: 0.78rem;
   text-align: left;
 }
 
-.detail svg {
-  width: 18px;
-  height: 18px;
+.detail-icon {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
   color: var(--secondary);
+  margin-top: 1px;
+}
+
+.detail > span:last-child {
+  min-width: 0;
+  line-height: 1.45;
 }
 
 .map-button {
@@ -269,7 +331,7 @@ h1 {
   font-weight: 500;
 }
 
-.map-button svg {
+.map-button .icon {
   width: 16px;
   height: 16px;
 }
@@ -291,7 +353,9 @@ h1 {
   font-size: 0.9rem;
 }
 
-.blessings svg {
+.section-flourish {
+  width: 22px;
+  height: 22px;
   margin: 8px auto 0;
   color: rgba(115, 92, 0, 0.62);
 }
@@ -377,9 +441,9 @@ h1 {
   font-weight: 700;
 }
 
-.bottom-nav svg {
-  width: 19px;
-  height: 19px;
+.bottom-nav .icon {
+  width: 20px;
+  height: 20px;
 }
 
 @media (min-width: 720px) {
