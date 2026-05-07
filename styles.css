@@ -18,7 +18,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 82px;
+  scroll-padding-top: 90px;
 }
 
 body {
@@ -189,11 +189,6 @@ h1 {
   -webkit-mask-image: url("./assets/icons/festival.svg");
 }
 
-.icon-ganesha {
-  mask-image: url("./assets/icons/ganesha.svg");
-  -webkit-mask-image: url("./assets/icons/ganesha.svg");
-}
-
 .icon-home {
   mask-image: url("./assets/icons/home.svg");
   -webkit-mask-image: url("./assets/icons/home.svg");
@@ -244,12 +239,12 @@ h1 {
   right: 0;
   left: 0;
   width: min(100%, 720px);
-  min-height: 64px;
+  min-height: 72px;
   margin-inline: auto;
   border-bottom: 1px solid var(--line);
-  display: grid;
-  grid-template-columns: 64px minmax(0, 1fr) 64px;
+  display: flex;
   align-items: center;
+  justify-content: center;
   background: rgba(251, 249, 248, 0.97);
   box-shadow: 0 4px 14px rgba(139, 0, 0, 0.08);
   backdrop-filter: blur(14px);
@@ -268,7 +263,6 @@ h1 {
 }
 
 .top-nav-title {
-  justify-self: center;
   min-width: 0;
   color: var(--primary);
   font-family: "Noto Serif", Georgia, "Times New Roman", serif;
@@ -279,10 +273,12 @@ h1 {
 }
 
 .nav-ganesha {
-  width: 34px;
-  height: 40px;
-  justify-self: center;
-  color: var(--secondary);
+  position: absolute;
+  left: clamp(14px, 4vw, 22px);
+  width: 44px;
+  height: 52px;
+  display: block;
+  object-fit: contain;
 }
 
 .content-section {
