@@ -18,6 +18,12 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <nav class="top-nav" data-scroll-nav aria-label="Wedding navigation">
+      <span class="icon icon-ganesha nav-ganesha" aria-hidden="true"></span>
+      <a class="top-nav-title" href="#top">Priya &amp; Anshul</a>
+      <span class="icon icon-ganesha nav-ganesha" aria-hidden="true"></span>
+    </nav>
+
     <main class="invitation-shell" id="top">
       <section class="hero-card" aria-labelledby="main-title">
         <figure class="hero-image">
@@ -230,5 +236,22 @@
         Contacts
       </a>
     </nav>
+
+    <script>
+      const scrollNav = document.querySelector("[data-scroll-nav]");
+      const heroCopy = document.querySelector(".hero-copy");
+
+      const updateScrollNav = () => {
+        const threshold = heroCopy
+          ? heroCopy.offsetTop + heroCopy.offsetHeight - 8
+          : 180;
+
+        scrollNav.classList.toggle("is-visible", window.scrollY > threshold);
+      };
+
+      updateScrollNav();
+      window.addEventListener("scroll", updateScrollNav, { passive: true });
+      window.addEventListener("resize", updateScrollNav);
+    </script>
   </body>
 </html>

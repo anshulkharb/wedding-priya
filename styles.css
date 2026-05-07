@@ -18,7 +18,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 14px;
+  scroll-padding-top: 82px;
 }
 
 body {
@@ -189,6 +189,11 @@ h1 {
   -webkit-mask-image: url("./assets/icons/festival.svg");
 }
 
+.icon-ganesha {
+  mask-image: url("./assets/icons/ganesha.svg");
+  -webkit-mask-image: url("./assets/icons/ganesha.svg");
+}
+
 .icon-home {
   mask-image: url("./assets/icons/home.svg");
   -webkit-mask-image: url("./assets/icons/home.svg");
@@ -230,6 +235,54 @@ h1 {
   color: var(--muted);
   font-family: "Noto Serif", Georgia, serif;
   font-size: 0.88rem;
+}
+
+.top-nav {
+  position: fixed;
+  z-index: 30;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: min(100%, 720px);
+  min-height: 64px;
+  margin-inline: auto;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr) 64px;
+  align-items: center;
+  background: rgba(251, 249, 248, 0.97);
+  box-shadow: 0 4px 14px rgba(139, 0, 0, 0.08);
+  backdrop-filter: blur(14px);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-100%);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+.top-nav.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.top-nav-title {
+  justify-self: center;
+  min-width: 0;
+  color: var(--primary);
+  font-family: "Noto Serif", Georgia, "Times New Roman", serif;
+  font-size: clamp(1.08rem, 4vw, 1.28rem);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.nav-ganesha {
+  width: 34px;
+  height: 40px;
+  justify-self: center;
+  color: var(--secondary);
 }
 
 .content-section {
