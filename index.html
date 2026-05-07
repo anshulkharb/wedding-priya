@@ -237,6 +237,24 @@
     <script>
       const scrollNav = document.querySelector("[data-scroll-nav]");
       const heroCopy = document.querySelector(".hero-copy");
+      const bottomNavLinks = [...document.querySelectorAll(".bottom-nav a")];
+      const navTargets = bottomNavLinks
+        .map((link) => ({
+          link,
+          section: document.querySelector(link.getAttribute("href")),
+        }))
+        .filter((item) => item.section);
+
+      const updateBottomNav = () => {
+        const current = navTargets.reduce((active, item) => {
+          const top = item.section.getBoundingClientRect().top;
+          return top <= 120 ? item : active;
+        }, navTargets[0]);
+
+        bottomNavLinks.forEach((link) => {
+          link.classList.toggle("active", link === current.link);
+        });
+      };
 
       const updateScrollNav = () => {
         const threshold = heroCopy
@@ -244,11 +262,13 @@
           : 180;
 
         scrollNav.classList.toggle("is-visible", window.scrollY > threshold);
+        updateBottomNav();
       };
 
       updateScrollNav();
       window.addEventListener("scroll", updateScrollNav, { passive: true });
       window.addEventListener("resize", updateScrollNav);
+      window.addEventListener("hashchange", updateBottomNav);
     </script>
   </body>
 </html>
