@@ -254,6 +254,11 @@ h1 {
   color: rgba(115, 92, 0, 0.72);
 }
 
+.ceremony-icon {
+  width: 40px;
+  height: 40px;
+}
+
 .event-card h4 {
   font-size: 1.18rem;
   font-weight: 700;
