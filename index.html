@@ -157,7 +157,7 @@
         </article>
       </section>
 
-      <section class="content-section blessings" aria-labelledby="blessings-title">
+      <section class="content-section blessings" id="blessings" aria-labelledby="blessings-title">
         <h2 id="blessings-title">With Blessings From</h2>
         <p class="blessing-kicker">With the heavenly blessings of grandparents</p>
         <p class="blessing-name">Late Smt. Phulpati &amp; Late Sh. Phool Singh</p>
@@ -228,7 +228,7 @@
         <span class="icon icon-celebration" aria-hidden="true"></span>
         Events &amp; Locations
       </a>
-      <a href="#rsvp">
+      <a href="#rsvp" data-active-from="#blessings">
         <span class="icon icon-call" aria-hidden="true"></span>
         Contacts
       </a>
@@ -241,7 +241,9 @@
       const navTargets = bottomNavLinks
         .map((link) => ({
           link,
-          section: document.querySelector(link.getAttribute("href")),
+          section: document.querySelector(
+            link.dataset.activeFrom || link.getAttribute("href"),
+          ),
         }))
         .filter((item) => item.section);
 
