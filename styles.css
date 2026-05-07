@@ -473,6 +473,10 @@ h1 {
   font-style: italic;
 }
 
+.special-invitation em {
+  font-weight: 400;
+}
+
 .section-flourish {
   width: 22px;
   height: 22px;
