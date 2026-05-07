@@ -169,6 +169,11 @@ h1 {
   -webkit-mask-image: url("./assets/icons/contacts.svg");
 }
 
+.icon-crown {
+  mask-image: url("./assets/icons/crown.svg");
+  -webkit-mask-image: url("./assets/icons/crown.svg");
+}
+
 .icon-face {
   mask-image: url("./assets/icons/face.svg");
   -webkit-mask-image: url("./assets/icons/face.svg");
