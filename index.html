@@ -5,31 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Wedding invitation for Priya and Anshul, June 20-21, 2026 in Rohtak."
+      content="Wedding event information for Priya and Anshul, June 20-21, 2026 in Rohtak."
     />
     <meta name="theme-color" content="#7b1f35" />
     <title>Priya Weds Anshul</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="hero" id="top">
-      <nav class="topbar" aria-label="Wedding invitation navigation">
+    <header class="hero compact-hero" id="top">
+      <nav class="topbar" aria-label="Wedding site navigation">
         <a class="brand" href="#top">P &amp; A</a>
         <div class="nav-links">
           <a href="#events">Events</a>
-          <a href="#venues">Venues</a>
-          <a href="#rsvp">RSVP</a>
+          <a href="#rsvp">Contacts</a>
         </div>
       </nav>
 
       <div class="hero-grid">
         <section class="invite-panel" aria-labelledby="main-title">
-          <p class="eyebrow">Together with their families</p>
+          <p class="eyebrow">Wedding Information</p>
           <h1 id="main-title">Priya weds Anshul</h1>
           <p class="blessing">
-            Smt. Yashwanti &amp; Sh. Ram Niwas Kharb solicit your gracious
-            presence and blessings on the auspicious occasion of the wedding
-            ceremony of their loving son.
+            Events, venues, locations, and contact details for the wedding
+            celebrations in Rohtak.
           </p>
 
           <div class="names" aria-label="Couple names">
@@ -40,7 +38,7 @@
 
           <div class="hero-actions" aria-label="Primary actions">
             <a class="button primary" href="#events">View Events</a>
-            <a class="button secondary" href="#rsvp">RSVP</a>
+            <a class="button secondary" href="#rsvp">Contacts</a>
           </div>
         </section>
 
@@ -51,7 +49,7 @@
             alt=""
             aria-hidden="true"
           />
-          <p class="date-kicker">Golden Moments</p>
+          <p class="date-kicker">Dates</p>
           <time datetime="2026-06-20">20 June 2026</time>
           <span class="date-divider"></span>
           <time datetime="2026-06-21">21 June 2026</time>
@@ -62,30 +60,11 @@
     </header>
 
     <main>
-      <section class="section family-band" aria-labelledby="families-title">
-        <div class="section-inner two-column">
-          <div>
-            <p class="section-label">Wedding Ceremony</p>
-            <h2 id="families-title">An invitation with blessings</h2>
-          </div>
-          <div class="family-copy">
-            <p>
-              Bride's details: D/o Smt. Saroj Bala &amp; Sh. Naresh Nandal,
-              R/o Rohtak.
-            </p>
-            <p>
-              Your presence will make these golden moments more joyful and
-              memorable for the families.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section class="section" id="events" aria-labelledby="events-title">
         <div class="section-inner">
           <div class="section-heading">
-            <p class="section-label">Schedule</p>
-            <h2 id="events-title">Golden Moments</h2>
+            <p class="section-label">Events &amp; Locations</p>
+            <h2 id="events-title">Wedding Schedule</h2>
           </div>
 
           <div class="event-grid">
@@ -94,6 +73,7 @@
                 <p>Saturday</p>
                 <h3>20th June, 2026</h3>
               </div>
+
               <dl class="timeline">
                 <div>
                   <dt>Lagan Tikka</dt>
@@ -104,14 +84,23 @@
                   <dd>7:30 PM</dd>
                 </div>
               </dl>
-              <a
-                class="venue-link"
-                href="https://www.google.com/maps/search/?api=1&query=Garima%20Garden%20Near%20Vita%20Chowk%20Gohana%20Road%20Rohtak"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Open Venue Map
-              </a>
+
+              <div class="event-location">
+                <p class="venue-date">Venue</p>
+                <h4>Garima Garden</h4>
+                <address>
+                  Near Vita Chowk,<br />
+                  Gohana Road, Rohtak
+                </address>
+                <a
+                  class="venue-link"
+                  href="https://www.google.com/maps/search/?api=1&query=Garima%20Garden%20Near%20Vita%20Chowk%20Gohana%20Road%20Rohtak"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Open Map
+                </a>
+              </div>
             </article>
 
             <article class="event-day">
@@ -119,6 +108,7 @@
                 <p>Sunday</p>
                 <h3>21st June, 2026</h3>
               </div>
+
               <dl class="timeline">
                 <div>
                   <dt>Sehra Bandi</dt>
@@ -129,87 +119,58 @@
                   <dd>7:15 PM</dd>
                 </div>
               </dl>
-              <a
-                class="venue-link"
-                href="https://www.google.com/maps/search/?api=1&query=Singhasan%20Banquet%20%26%20Lawn%20Mastnath%20Nagar%20Rohtak"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Open Venue Map
-              </a>
+
+              <div class="event-location">
+                <p class="venue-date">Venue</p>
+                <h4>Singhasan Banquet &amp; Lawn</h4>
+                <address>
+                  Mastnath Nagar,<br />
+                  Rohtak
+                </address>
+                <a
+                  class="venue-link"
+                  href="https://www.google.com/maps/search/?api=1&query=Singhasan%20Banquet%20%26%20Lawn%20Mastnath%20Nagar%20Rohtak"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Open Map
+                </a>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section venue-band" id="venues" aria-labelledby="venues-title">
+      <section class="section contacts-section" id="rsvp" aria-labelledby="contacts-title">
         <div class="section-inner">
           <div class="section-heading">
-            <p class="section-label">Venues</p>
-            <h2 id="venues-title">Where we gather</h2>
+            <p class="section-label">Contacts</p>
+            <h2 id="contacts-title">People Involved</h2>
           </div>
 
-          <div class="venue-grid">
-            <article class="venue-card">
-              <p class="venue-date">20 June</p>
-              <h3>Garima Garden</h3>
-              <address>
-                Near Vita Chowk,<br />
-                Gohana Road, Rohtak
-              </address>
+          <div class="contact-grid">
+            <article class="contact-card">
+              <p class="venue-date">Groom's Family</p>
+              <h3>Smt. Yashwanti &amp; Sh. Ram Niwas Kharb</h3>
+              <p>Parents of Anshul</p>
             </article>
 
-            <article class="venue-card">
-              <p class="venue-date">21 June</p>
-              <h3>Singhasan Banquet &amp; Lawn</h3>
-              <address>
-                Mastnath Nagar,<br />
-                Rohtak
-              </address>
+            <article class="contact-card">
+              <p class="venue-date">Bride's Family</p>
+              <h3>Smt. Saroj Bala &amp; Sh. Naresh Nandal</h3>
+              <p>Parents of Priya, R/o Rohtak</p>
             </article>
           </div>
-        </div>
-      </section>
 
-      <section class="section rsvp-section" id="rsvp" aria-labelledby="rsvp-title">
-        <div class="section-inner two-column">
-          <div>
-            <p class="section-label">R.S.V.P.</p>
-            <h2 id="rsvp-title">Smt. Yashwanti &amp; Sh. Ram Niwas Kharb</h2>
+          <div class="phone-panel" aria-label="Contact numbers">
+            <h3>Contact Numbers</h3>
+            <div class="phone-list">
+              <a href="tel:+919034343903">90343-43903</a>
+              <a href="tel:+919991035092">99910-35092</a>
+              <a href="tel:+919416852410">94168-52410</a>
+              <a href="tel:+919996117136">99961-17136</a>
+            </div>
           </div>
-
-          <div class="phone-list" aria-label="Mobile numbers">
-            <a href="tel:+919034343903">90343-43903</a>
-            <a href="tel:+919991035092">99910-35092</a>
-            <a href="tel:+919416852410">94168-52410</a>
-            <a href="tel:+919996117136">99961-17136</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section compliments" aria-labelledby="compliments-title">
-        <div class="section-inner">
-          <div class="section-heading">
-            <p class="section-label">With Best Compliments From</p>
-            <h2 id="compliments-title">Family, relatives &amp; friends</h2>
-          </div>
-
-          <ul class="compliment-list">
-            <li>Satbir Singh (Retd. HES II)</li>
-            <li>Master Ranbir</li>
-            <li>Naresh Kumar</li>
-            <li>Suresh Kumar (JE)</li>
-            <li>All Kharb Family</li>
-            <li>Relatives &amp; Friends</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="special-invite" aria-labelledby="special-title">
-        <div class="section-inner">
-          <p class="section-label">Special Invitation</p>
-          <h2 id="special-title">Daivik Dulhan</h2>
-          <p>(Mele Bhaiya Ki Shadi Me Jalul-Jalul Aana)</p>
         </div>
       </section>
     </main>

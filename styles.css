@@ -127,6 +127,7 @@ a {
 h1,
 h2,
 h3,
+h4,
 p {
   overflow-wrap: anywhere;
 }
@@ -306,36 +307,24 @@ h3 {
   font-weight: 500;
 }
 
-.family-band {
-  color: #fffaf1;
-  background:
-    linear-gradient(130deg, rgba(123, 31, 53, 0.93), rgba(49, 91, 72, 0.92)),
-    var(--maroon);
-}
-
-.family-band h2,
-.family-band .section-label {
-  color: #fff4d6;
-}
-
-.family-copy {
-  color: rgba(255, 250, 241, 0.86);
-  font-size: clamp(1rem, 2vw, 1.22rem);
-}
-
-.family-copy p {
-  margin: 0 0 16px;
+h4 {
+  margin: 0;
+  color: var(--maroon-dark);
+  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+  line-height: 1.12;
+  font-weight: 500;
 }
 
 .event-grid,
-.venue-grid {
+.contact-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
 }
 
 .event-day,
-.venue-card {
+.contact-card,
+.phone-panel {
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: clamp(22px, 4vw, 34px);
@@ -384,29 +373,41 @@ h3 {
   white-space: nowrap;
 }
 
-.venue-band {
-  background:
-    linear-gradient(90deg, rgba(49, 91, 72, 0.1), transparent 45%),
-    #fff3e6;
-}
-
-.venue-card h3 {
-  max-width: 15ch;
+.event-location {
+  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
 }
 
 address {
-  margin-top: 18px;
+  margin: 14px 0 18px;
   color: var(--muted);
   font-style: normal;
   font-size: 1.05rem;
 }
 
-.rsvp-section {
-  background: var(--green);
-  color: #fffaf1;
+.contacts-section {
+  background:
+    linear-gradient(90deg, rgba(49, 91, 72, 0.1), transparent 45%),
+    #fff3e6;
 }
 
-.rsvp-section h2 {
+.contact-card p:last-child {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+}
+
+.phone-panel {
+  margin-top: 18px;
+  background:
+    linear-gradient(130deg, rgba(123, 31, 53, 0.95), rgba(49, 91, 72, 0.94)),
+    var(--maroon);
+}
+
+.phone-panel h3 {
+  margin-bottom: 18px;
   color: #fffaf1;
 }
 
@@ -427,44 +428,6 @@ address {
   background: rgba(255, 255, 255, 0.08);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
-}
-
-.compliment-list {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  list-style: none;
-}
-
-.compliment-list li {
-  min-height: 72px;
-  display: flex;
-  align-items: center;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 16px;
-  background: rgba(255, 250, 241, 0.72);
-}
-
-.special-invite {
-  padding: clamp(56px, 8vw, 92px) clamp(18px, 4vw, 56px);
-  text-align: center;
-  color: #fffaf1;
-  background:
-    linear-gradient(rgba(76, 16, 33, 0.72), rgba(76, 16, 33, 0.9)),
-    repeating-linear-gradient(135deg, #7b1f35 0 12px, #8d2840 12px 24px);
-}
-
-.special-invite h2 {
-  color: #fff4d6;
-}
-
-.special-invite p:last-child {
-  margin: 18px auto 0;
-  max-width: 640px;
-  font-size: clamp(1.1rem, 3vw, 1.75rem);
 }
 
 .footer {
@@ -507,8 +470,7 @@ address {
   .hero-grid,
   .two-column,
   .event-grid,
-  .venue-grid,
-  .compliment-list {
+  .contact-grid {
     grid-template-columns: 1fr;
   }
 
