@@ -343,7 +343,7 @@ h1 {
 }
 
 .blessings {
-  gap: 8px;
+  gap: 10px;
 }
 
 .blessings p {
@@ -351,6 +351,44 @@ h1 {
   color: var(--muted);
   font-family: "Noto Serif", Georgia, serif;
   font-size: 0.9rem;
+}
+
+.blessing-kicker {
+  font-style: italic;
+}
+
+.blessings .blessing-name {
+  color: var(--primary);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.blessing-list {
+  margin-top: 8px;
+  display: grid;
+  gap: 10px;
+}
+
+.blessing-list p {
+  display: grid;
+  gap: 2px;
+}
+
+.blessing-list span,
+.blessing-list small {
+  color: var(--muted);
+  font-family: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.68rem;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.blessing-list small {
+  font-size: 0.7rem;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .section-flourish {
