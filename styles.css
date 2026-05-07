@@ -18,13 +18,13 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 76px;
+  scroll-padding-top: 14px;
 }
 
 body {
   min-height: 100vh;
   margin: 0;
-  padding: 64px 0 84px;
+  padding: 0 0 84px;
   color: var(--text);
   background:
     radial-gradient(rgba(115, 92, 0, 0.14) 1.5px, transparent 1.5px),
@@ -57,45 +57,6 @@ svg {
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 1.7;
-}
-
-.top-appbar {
-  position: fixed;
-  z-index: 20;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 64px;
-  display: grid;
-  grid-template-columns: 48px 1fr 48px;
-  align-items: center;
-  padding: 0 10px;
-  border-bottom: 1px solid var(--line);
-  background: rgba(251, 249, 248, 0.96);
-  box-shadow: 0 2px 8px rgba(139, 0, 0, 0.08);
-  backdrop-filter: blur(14px);
-}
-
-.top-title {
-  justify-self: center;
-  color: var(--primary);
-  font-family: "Noto Serif", Georgia, serif;
-  font-size: 1.12rem;
-  font-weight: 700;
-}
-
-.icon-button {
-  width: 40px;
-  height: 40px;
-  display: grid;
-  place-items: center;
-  border-radius: 999px;
-  color: var(--muted);
-}
-
-.icon-button svg {
-  width: 20px;
-  height: 20px;
 }
 
 .invitation-shell {
@@ -423,7 +384,6 @@ h1 {
     padding-bottom: 40px;
   }
 
-  .top-appbar,
   .bottom-nav {
     width: min(100%, 720px);
     margin-inline: auto;
