@@ -1,6 +1,6 @@
-# Priya Weds Anshul
+# Anshul Weds Priya
 
-Mobile-friendly wedding invitation site for Priya and Anshul.
+Mobile-friendly wedding invitation site for Anshul and Priya.
 
 ## View locally
 
