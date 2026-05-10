@@ -472,10 +472,16 @@ h1 {
 }
 
 .special-invitation span {
-  font-size: 0.72rem;
+  font-size: 0.77rem;
+  font-weight: 400;
+}
+
+.special-invitation strong {
+  font-weight: 700;
 }
 
 .special-invitation em {
+  font-size: 0.75rem;
   font-weight: 400;
 }
 
