@@ -76,15 +76,9 @@ a {
   border: 4px solid var(--surface);
   border-radius: 8px;
   overflow: hidden;
-  background: var(--surface);
+  background: var(--surface) url("./assets/wedding-hero.jpg") center / cover
+    no-repeat;
   box-shadow: var(--shadow);
-}
-
-.hero-image img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
 }
 
 .hero-copy {
@@ -279,7 +273,7 @@ h1 {
   width: 38px;
   height: 38px;
   display: block;
-  object-fit: contain;
+  background: url("./assets/icons/ganesha.png") center / contain no-repeat;
 }
 
 .content-section {
