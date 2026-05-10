@@ -471,6 +471,10 @@ h1 {
   font-style: italic;
 }
 
+.special-invitation span {
+  font-size: 0.72rem;
+}
+
 .special-invitation em {
   font-weight: 400;
 }
